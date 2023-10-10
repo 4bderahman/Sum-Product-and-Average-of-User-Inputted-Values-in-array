@@ -1,0 +1,30 @@
+ALGORITHME CalculeSommeProduitMoyenne
+
+VARIABLES 
+    Tableau T(10) : Réel
+    i : Entier
+    somme, produit, moyenne : Réel
+
+DEBUT
+
+    somme <-- 0
+    produit <-- 1
+
+   
+    POUR i <-- 0 à 9 pas 1 FAIRE
+        ECRIRE ("Entrez un réel pour la position ", i+1, " : ")
+        LIRE (T(i))
+
+        somme <-- somme + T(i)
+        produit <-- produit * T(i)
+
+    FIN POUR
+
+    moyenne <-- somme / 10
+
+    
+    ECRIRE ("La somme des éléments est : ", somme)
+    ECRIRE ("Le produit des éléments est : ", produit)
+    ECRIRE ("La moyenne des éléments est : ", moyenne)
+
+FIN
